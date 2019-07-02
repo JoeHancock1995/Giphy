@@ -3,7 +3,10 @@ html {
   font-size: 1em;
   line-height: 2;
 }
-
+#gif-form{
+  margin-left: 30px;
+  padding-left : 30px; 
+}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.

@@ -11,12 +11,25 @@
 </head>
 
 <body>
+<div class="header">
+  <div id="title">
+      <h1>GIPHY API</h1>
+  </div>
+  <form id="gif-form">
+      <input type="text" class="search">
+      <input type="submit" value="search">
+  </form>
+  <button data-person="glitch">glitch</button>
+  <button data-person="static">static</button>
+  <button data-person="distortion">distortion</button>
+  <button data-person="postmodern">Postmodern</button>
+  <button data-person="brutalism">Brutalism</button>
+  <button data-person="industrial waste">inventor</button>
+</div>
 
-<form id="gif-form">
-    <input type="text" class="search">
-    <input type="submit" value="search">
-</form>
 <div class="results"></div>
+<div id="gifs-appear-here"></div>
+
 <script src="js/vendor/modernizr-3.7.1.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
