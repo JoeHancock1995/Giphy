@@ -15,18 +15,17 @@
   <div id="title">
       <h1>GIPHY API</h1>
   </div>
-  <form id="gif-form">
-      <input type="text" class="search">
-      <input type="submit" value="search">
-  </form>
+ 
+  <input id="searchtext" type="text" placeholder="Search" class="search">
+  <button id="searchgifs" type="submit" onclick="getData()">Go</button>
   <button data-person="glitch">glitch</button>
   <button data-person="static">static</button>
   <button data-person="distortion">distortion</button>
   <button data-person="postmodern">Postmodern</button>
-  <button data-person="brutalism">Brutalism</button>
-  <button data-person="industrial waste">inventor</button>
+  <button data-person="brutalist">Brutalism</button>
+  <button data-person="nuclear reactor">Toxic</button>
 </div>
-
+<div class="inner"></div>
 <div class="results"></div>
 <div id="gifs-appear-here"></div>
 
