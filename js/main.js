@@ -9,17 +9,40 @@ function addSearchBtns() {
     $("#buttons").append($button);
   }
 }
+addSearchBtns();
 
+$(document).on("click", ".btn" , function () {
+  $("#results").html("");
+})
 
-  
-$("button").on("click", function(){
- var digital = $(this).attr("data-digital");
- var queryURL ="https://api.giphy.com/v1/gifs/search?q=" + 
- digital + "&api_key=ZJqlCvnXXccVUVpatKWlVNZ959QmuuHE&limit=10"; 
-
+ var queryURL ="https://api.giphy.com/v1/gifs/search?";
+var query;
+var params = {
+  q: query,
+  limit: 10,
+  api_key: "ZJqlCvnXXccVUVpatKWlVNZ959QmuuHE",
+  fmt:"json"
+};
+if ($(this).hasClass("search-btn")) {
+  query = $(this).val();
+} else if ($("#user-search").val() !== "") {
+  query = $("#user-search").val();
+  topics.push(query);
+  if (topics.length > 11) {
+    topics.shift();
+  }
+  addSearchBtns();
+}
+params.q = query;
  $.ajax({
-   url: queryURL,
-   method: "GET"
+   url: queryURL + $.param(params),
+   method: "GET",
+   success: function (r) {
+     for (i=0; i < params.limit; i++) {
+       var $img = $("<img>");
+       var $div = $("<div>");
+     }
+   }
  })
 
  .then(function(response){
