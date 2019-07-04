@@ -7,12 +7,14 @@ html {
   margin-left: 30px;
   padding-left : 30px; 
 }
+#results {
+  display: inline;
+}
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+#gifs-appear-here {
+  display: inline;
+}
+
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
