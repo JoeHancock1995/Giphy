@@ -6,6 +6,12 @@ html {
 #title {
   text-align: center;
 }
+.header{
+  text-align: center;
+  font-family: 'RabbidHighwaySignExtendedRegular'; 
+  font-weight: normal; 
+  font-style: italic; 
+}
 
 #results {
   margin: 0 auto;
@@ -13,14 +19,10 @@ html {
 }
 
 .gif-box {
-  margin: 0.5rem;
+  margin: 10px;
   display: inline-block;
-  border: 1px solid black;
-  height: auto;
-  width: auto;
-img {
-  display: block;
-}
+  border: 5px outset;
+
 h6 {
   font-size: 18px;
     font-weight: bold;
