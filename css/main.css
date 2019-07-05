@@ -3,19 +3,27 @@ html {
   font-size: 1em;
   line-height: 2;
 }
-#gif-form{
-  margin-left: 30px;
-  padding-left : 30px; 
+#title {
+  text-align: center;
 }
+
 #results {
-  display: inline;
+  margin: 0 auto;
+  width: 1200px;
 }
 
-#gifs-appear-here {
-  display: inline;
+.gif-box {
+  margin: 0.5rem;
+  display: inline-block;
+  border: 1px solid black;
+  height: auto;
+  width: auto;
+img {
+  display: block;
 }
-
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+h6 {
+  font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
 }

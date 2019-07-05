@@ -1,5 +1,5 @@
-var topics = ["glitchart" , "static" , "synthesis" , "pixelsorting" , "brutalism"
- , "pixelmosh" , "databend" , "webpunk" , "analogglitch" , "videosynth" , "nihilminus"];
+var topics = ["glitch art" , "static art" , "synthesis" , "pixel sorting" , "brutalism"
+ , "pixel mosh" , "data bend" , "webpunk" , "analog" , "videosynth" , "distortion art"];
 
 function addSearchBtns() {
   $("#buttons").html("");
