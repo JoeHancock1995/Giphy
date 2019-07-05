@@ -13,7 +13,7 @@ addSearchBtns();
 
 $(document).on("click", ".btn" , function () {
   $("#results").html("");
-})
+
 
 var queryURL ="https://api.giphy.com/v1/gifs/search?";
 var query;
@@ -53,6 +53,8 @@ params.q = query;
           "data-state": "still",
           class: "gif"
        });
+       $div.addClass("gif-box");
+       $rating.text("Rating: " + gifObj.rating);
        $div.append($img, $rating);
        $("#results").append($div);
      }
@@ -70,3 +72,4 @@ params.q = query;
      });
    }
  });
+});
