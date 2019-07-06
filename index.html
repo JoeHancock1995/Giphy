@@ -14,10 +14,12 @@
   <div id="title">
       <h1>GIPHY API</h1>
   </div>
-  <div class="inputFields">
-      <input id="searchtext" type="text" placeholder="Search" class="search">
-      <button id="searchgifs" type="submit" onclick="getData()">Go</button>
-  </div>
+  
+  <form id="gif-form">
+    <label for="gif-input">Add GIF topic</label>
+    <input type="text" id="gif-input">
+    <input id="add-gif" type="submit" value="Add">
+  </form>
 </div>
   <div id="buttons"></div>
   <div id="results">

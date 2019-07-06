@@ -9,6 +9,12 @@ var topics = ["glitch art" , "static art" , "synthesis" , "pixel sorting" , "bru
     $("#buttons").append($button);
   }
 }
+$("#add-gif").on("click", function(event) {
+  event.preventDefault();
+  var topic = $("#gif-input").val();
+  topics.push(topic);
+  addSearchBtns();
+});
 addSearchBtns();
 
 $(document).on("click", ".btn", function() {
